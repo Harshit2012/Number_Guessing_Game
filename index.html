@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div id="game">
+        <h1 class="animate__animated animate__flip">Number Guessing Game</h1>
+        <p class="animate__animated animate__lightSpeedInRight">Guess a number between 1 and 100</p>
+        <p class="animate__animated animate__lightSpeedIntRight" id="number"></p>
+        <input class="animate__animated animate__lightSpeedInLeft" type="number" id="guessInput" placeholder="Enter your guess">
+        <button onclick="guess()" class="animate__animated animate__lightSpeedInLeft">Enter</button>
+        <p class="animate__animated animate__lightSpeedInLeft" id="result"></p>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
