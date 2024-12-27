@@ -1,9 +1,9 @@
 let raw_number = Math.random() * (100 - 1) + 1;
+const number = Math.round(raw_number);
 
 function guess() {
     user_number = parseInt(document.getElementById("guessInput").value);
     length_num = user_number.toString().length;
-    const number = Math.round(raw_number);
     if (length_num == 0) {
         document.getElementById("result").innerHTML = "Please enter a number";
     }
