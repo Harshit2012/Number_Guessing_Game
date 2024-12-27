@@ -1,4 +1,4 @@
-let raw_number = Math.random() * (100 - 1) + 1;
+raw_number = Math.random() * (100 - 1) + 1;
 const number = Math.round(raw_number);
 
 function guess() {
@@ -11,7 +11,7 @@ function guess() {
         document.getElementById("result").innerHTML = "Please enter a number between 1 and 100";
     }
     else if (user_number == number) {
-        document.getElementById("result").innerHTML = "Congratulations! You guessed the right number!";
+        document.getElementById("result").innerHTML = "Congratulations! You guessed the right number! Refresh to play again.";
     }
     else if (user_number > number) {
         document.getElementById("result").innerHTML = "Too high";
